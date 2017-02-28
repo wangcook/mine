@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="resetCss/reset.css" type="text/css" />
+		<script src="JQuery/jquery-1.11.1.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header">
+			<div class="nav">
+				
+				<ul class="mine">
+					<span>你好，请登录<a href="#">免费注册</a></span>
+					<li>|<a href="#">我的订单</a>
+						<div class="menu">
+						<a href="#">待付款订单</a>
+						<a href="#">待付款交易</a>
+						<a href="#">待付款收货</a>
+					</div>
+					</li>
+					<li>|<a href="#">我的收藏</a>
+						<div class="menu">
+						<a href="#">店铺收藏</a>
+						<a href="#">商品收藏</a>
+						</div>
+					</li>
+					<li>|<a href="#">客服服务</a>
+						<div class="menu">
+						<a href="#">购物指南</a>
+						<a href="#">商家服务</a>
+						<a href="#">售后服务</a>
+						
+					</div>
+					</li>
+					<script>//						var div=$('div [class=menu]');
+
+		$('li').mouseover(function() {
+				var index = $(this).index();
+				var div = $('div [class=menu]');
+				$(this).css('border','1px solid gray').css('border-bottom',0);
+				div.eq(index-1).css('display', 'block').css('border','1px solid gray').css('border-top',0);
+
+				});
+				$('li').mouseout(function() {
+				var index = $(this).index();
+				var div = $('div [class=menu]');
+				div.css('display', 'none');
+				$(this).css('border',0);
+
+				});
+				
+					</script>
+				</ul>
+			</div>
+			
+			
+		</div>
+		<!--  --------------log------------------------>
+		
+		
+		<div id="log">
+			<div class="log-c">
+				<div class="log-l">
+				<a href="index.html">
+					<img src="img/7a1993ab9b604c1a17d5cc5e6ec0db7a.png" />
+				</a>
+				</div>
+				<div class="log-r">
+				<form class="search">
+					<input type="button" id="bt1"  value="宝贝"/>
+					<input type="text" id="text1" value="请输入您要搜索商品的关键字">
+					<input type="submit" value="搜索"/ style="border:0;width:90px;height:34px;background:#f15c18;">
+				</form>
+				<span style="background: url(img/gou.png) no-repeat left center;">
+					<a href="#">购物车结算></a></span>
+					<span style="background: url(img/shang.png) no-repeat left center;">
+					
+					<a href="#">我的商城></a></span>
+					
+					<ul class="nav1">
+						<li><a href="#">央广助农日</a>|</li>
+						<li><a href="#">3M</a>|</li>
+						<li><a href="#">达芙妮</a>|</li>
+						<li><a href="#">古方</a>|</li>
+						<li><a href="#">Vious Viutton</a>|</li>
+						<li><a href="#">迪士尼</a>|</li>
+						<li><a href="#">SIMETO</a></li>
+					</ul>
+					
+					
+					
+			</div>
+			
+			<div id="shops">
+				<ul>
+					<li style="width: 176px;background:#f15c18;color:white;"><a href="#">所有商品分类</a></li>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">TV直播</a></li>
+					<li><a href="#">品牌热卖</a></li>
+					<li><a href="#">今日特惠</a></li>
+					<li><a href="#">名品汇</a></li>
+				</ul>
+			</div>
+			</div>
+			
+			
+		</div>
+		
+		
+		<!-------------footer1---------------------------------->
+		<div id="footer-1">
+			<img src="img/cti.png">
+		</div>
+		
+		<!-------------footer2---------------------------------->
+		<div id="footer-2">
+			<div class="content">
+				<ul class="ul-l">
+					<h3>公告</h3>
+					<li><a href="#">【公告】食品类商品售后政策...</a></li>
+					<li><a href="#">【公告】食品类商品售后政策...</a></li>
+					<li><a href="#">【公告】食品类商品售后政策...</a></li>
+					<li><a href="#">【公告】食品类商品售后政策...</a></li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">电子发票</a></li>
+					<li><a href="#">用户注册协议</a></li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">电子发票</a></li>
+					<li><a href="#">用户注册协议</a></li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">电子发票</a></li>
+					<li><a href="#">用户注册协议</a></li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">电子发票</a></li>
+					<li><a href="#">用户注册协议</a></li>
+				</ul>
+				<ul style="padding-right: 0;">
+					<h3>购物指南</h3>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">电子发票</a></li>
+					<li><a href="#">用户注册协议</a></li>
+				</ul>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+		<!-------------footer3---------------------------------->
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
