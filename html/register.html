@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="../resetCss/reset.css" type="text/css" />
+		<link rel="stylesheet" href="../common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/register.css" />
+		<link href="../resetCss/jquery.idcode.css" type="text/css" rel="stylesheet">
+		<script src="../img/hm.js"></script>
+		<script src="../JQuery/jquery-1.11.1.js"></script>
+	</head>
+
+	<body >
+		<!--头部-->
+		<header>
+			<div id="register">
+				<img src="../img/7a1993ab9b604c1a17d5cc5e6ec0db7a.png">
+
+				<div class="reg-con">
+					<span>
+						<img src="../img/avatar.gif" />
+					</span>
+					<span>您好欢迎来到央广购物，已注册的会员请登录，或立即<a href="#">立即注册</a></span>
+
+				</div>
+			</div>
+		</header>
+
+		<!-------------登录------------>
+
+		<div id="main">
+			<!--左边-->
+			<div class="sale">
+				<img src="../img/login_img.jpg" />
+			</div>
+
+			<!--右边-->
+			<div class="enter">
+				<p>
+					<a href="#" class="active">用户登录</a>
+					<a href="#">手机动态登录</a>
+				</p>
+				<!--点击切换登录方式-->
+				<script>
+					var a = $('div [class=enter]').find('a');
+
+					a.click(function() {
+						$(this).addClass('active').siblings().removeClass('active');
+					})
+				</script>
+				<div class="input-c">
+					<form action="#">
+						<p>
+							账&nbsp;&nbsp;&nbsp;号：<input type="text" placeholder="请输入账号" />
+						</p>
+						<p>
+							密&nbsp;&nbsp;&nbsp;码：<input type="password" placeholder="请输入密码" />
+						</p>
+
+						<p>
+							验证码：<input style="width:120px ;" type="text" placeholder="请输入验证码" id ="Txtidcode" class ="txtVerification" /> 
+							<strong id="idcode"></strong>
+						</p>
+						<div>
+							<input type="checkbox" id="draw" name="" style="width: 20px;padding-top：15px" /><span style="position: relative;bottom: 15px;">七天免登录</span>
+							<a href="#" style="color: blue;">忘记密码</a>
+
+						</div>
+						<div>
+							<input id="butn" style="width: 347px;background: #ff500b;color: white;" type="submit" value="登录" />
+
+							<!--------------------获取验证码----------------->
+					<script src="../JS/jquery.idcode.js"></script>
+<script>
+    $.idcode.setCode();   //加载生成验证码方法
+    $("#butn").click(function(){
+        var IsBy = $.idcode.validateCode()  //调用返回值，返回值结果为true或者false
+        if(IsBy){
+            alert("验证码输入正确")
+        }else {
+            alert("请重新输入")
+        }
+    })
+</script>
+						</div>
+					</form>
+					<div id="wei">
+						使用合作网站登录：<br />
+						<a href="#">
+							<span>
+									</span> 微信
+						</a>
+						<script>
+							var a = $('#wei').find('a');
+							var span = a.find('span');
+
+							a.hover(function() {
+
+								span.css('background', 'url(../img/login_pic.png) no-repeat -160px 0');
+
+								$(this).css('color', 'green')
+
+							}, function() {
+
+								span.css('background', 'url(../img/login_pic.png) no-repeat -64px 0');
+
+								$(this).css('color', 'gray');
+
+							})
+						</script>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-------------footer3---------------------------------->
+		<div id="footer-3">
+			<p>
+				<a href="index.html">首页</a>|
+				<a href="#">招商合作</a>|
+				<a href="#">关于央广购物</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">成为供应商</a>|
+				<a href="#">招贤纳士</a>
+			</p>
+
+			<p>
+				<span class="police">京公安备:10031346840131</span>
+				<span>京ICP备10038858号</span>
+				<span>食品流通许可证编号：SP1101151210063489</span>
+				<span>信息网络传播视听节目许可证 0102002号</span>
+			</p>
+			<p>
+				<span>Copyright©2010-2017 cnrmall.com All Rights Reserved</span>
+				<span>服务热线：4008-518-518</span>
+			</p>
+
+			<p>
+				<a href="#">
+					<img src="../img/foot1.png" />
+				</a>
+				<a href="https://ss.knet.cn/verifyseal.dll">
+					<img src="../img/foot2.png" />
+				</a>
+				<a href="https://credit.cecdc.com/CX63030000051620161107.html">
+					<img src="../img/foot3.png" />
+				</a>
+				<a href="http://www.bj.cyberpolice.cn/index.do">
+					<img src="../img/foot4.png" />
+				</a>
+			</p>
+		</div>
+		<div id="sides">
+			<ul id="bt">
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li class="last">
+					<a href="#header">^top</a>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+
+</html>

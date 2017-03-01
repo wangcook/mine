@@ -1,0 +1,143 @@
+header{
+	width: 100%;
+	height: 80px;
+}
+#register{
+	width: 1000px;
+	margin: auto;
+	/*background: red;*/
+	height: 80px;
+}
+#register img{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+
+/*右边*/
+
+
+#register .reg-con{
+	margin-top: 20px;
+	float: right;
+	height: 40px;
+	font-size: 14px;
+}
+#register .reg-con span:nth-of-type(1){
+	display: inline-block;
+	width: 40px;
+	height:40px;
+	
+}
+#register .reg-con span:nth-of-type(1) img{
+	width:40px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+
+
+/****************main**********************/
+#main{
+	width: 1000px;
+	height: 600px;
+	margin: 20px auto;
+	position: relative;
+}
+#main .sale{
+	width: 450px;
+	height: 350px;
+	float: left;
+	margin: 30px 0;
+}
+
+#main .enter{
+	width: 440px;
+	padding: 20px;
+	height: 410px;
+	float: right;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#main .enter p{
+	width:440px;
+	height: 60px;
+	
+}
+#main .enter p a{
+	display: inline-block;
+	width: 220px;
+	height: 50px;
+	font-size: 20px;
+	float: left;
+	text-align: center;
+	border-bottom: 1px solid gray;
+	}
+.active{
+	color: #ff500b;
+	background: url(../img/line.png) no-repeat left bottom;
+	border: 0;
+}
+#main .enter .input-c{
+	width: 350px;
+	height: 335px;
+	padding: 20px 35px;
+}
+#main .enter .input-c p{
+	padding-left: 20px ;
+	width:328px;
+	height:50px;
+	border: 1px solid gray;
+	border-bottom: 0;
+	line-height: 50px;
+}
+#main .enter .input-c input{
+	/*width: 180px;*/
+	height: 40px;
+	font-size: 14px;
+	border: 0;
+	padding-left: 35px;
+}
+#main .enter .input-c p strong{
+	width: 100px;
+	height:50px;
+	background: gray;
+	float: right;
+}
+#main .enter .input-c div a{
+	float: right;
+	/*color: blue;*/
+}
+#wei{
+	padding-top: 20px;
+	position: relative;
+}
+#wei a{
+	display:inline-block;
+	width: 64px;
+	height: 40px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	color: gray;
+}
+#wei a span{
+	display:inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/login_pic.png) no-repeat -64px 0;
+}
+/************验证码*********/
+.code {
+/*background-image: url(code.jpg);*/
+font-family: Arial;
+font-style: italic;
+color: Red;
+border: 0;
+padding: 2px 3px;
+letter-spacing: 3px;
+font-weight: bolder;
+}
+.unchanged {
+border: 0;
+}

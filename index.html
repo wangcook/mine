@@ -1,177 +1,284 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>首页</title>
 		<link rel="stylesheet" href="resetCss/reset.css" type="text/css" />
+		<link rel="stylesheet" href="common.css" type="text/css" />
 		<script src="JQuery/jquery-1.11.1.js"></script>
 	</head>
+
 	<body>
 		<!--头部-->
 		<div id="header">
 			<div class="nav">
-				
+
 				<ul class="mine">
 					<span>你好，请登录<a href="#">免费注册</a></span>
-					<li>|<a href="#">我的订单</a>
+					<li>|
+						<a href="#">我的订单</a>
 						<div class="menu">
-						<a href="#">待付款订单</a>
-						<a href="#">待付款交易</a>
-						<a href="#">待付款收货</a>
-					</div>
-					</li>
-					<li>|<a href="#">我的收藏</a>
-						<div class="menu">
-						<a href="#">店铺收藏</a>
-						<a href="#">商品收藏</a>
+							<a href="#">待付款订单</a>
+							<a href="#">待付款交易</a>
+							<a href="#">待付款收货</a>
 						</div>
 					</li>
-					<li>|<a href="#">客服服务</a>
+					<li>|
+						<a href="#">我的收藏</a>
 						<div class="menu">
-						<a href="#">购物指南</a>
-						<a href="#">商家服务</a>
-						<a href="#">售后服务</a>
-						
-					</div>
+							<a href="#">店铺收藏</a>
+							<a href="#">商品收藏</a>
+						</div>
 					</li>
-					<script>//						var div=$('div [class=menu]');
+					<li>|
+						<a href="#">客服服务</a>
+						<div class="menu">
+							<a href="#">购物指南</a>
+							<a href="#">商家服务</a>
+							<a href="#">售后服务</a>
 
-		$('li').mouseover(function() {
-				var index = $(this).index();
-				var div = $('div [class=menu]');
-				$(this).css('border','1px solid gray').css('border-bottom',0);
-				div.eq(index-1).css('display', 'block').css('border','1px solid gray').css('border-top',0);
+						</div>
+					</li>
+					<script>
+						//						var div=$('div [class=menu]');
 
-				});
-				$('li').mouseout(function() {
-				var index = $(this).index();
-				var div = $('div [class=menu]');
-				div.css('display', 'none');
-				$(this).css('border',0);
+						$('li').mouseover(function() {
+							var index = $(this).index();
+							var div = $('div [class=menu]');
+							$(this).css('border', '1px solid gray').css('border-bottom', 0);
+							div.eq(index - 1).css('display', 'block').css('border', '1px solid gray').css('border-top', 0);
 
-				});
-				
+						});
+						$('li').mouseout(function() {
+							var index = $(this).index();
+							var div = $('div [class=menu]');
+							div.css('display', 'none');
+							$(this).css('border', 0);
+
+						});
 					</script>
 				</ul>
 			</div>
-			
-			
+
 		</div>
 		<!--  --------------log------------------------>
-		
-		
+
 		<div id="log">
 			<div class="log-c">
 				<div class="log-l">
-				<a href="index.html">
-					<img src="img/7a1993ab9b604c1a17d5cc5e6ec0db7a.png" />
-				</a>
+					<a href="index.html">
+						<img src="img/7a1993ab9b604c1a17d5cc5e6ec0db7a.png" />
+					</a>
 				</div>
 				<div class="log-r">
-				<form class="search">
-					<input type="button" id="bt1"  value="宝贝"/>
-					<input type="text" id="text1" value="请输入您要搜索商品的关键字">
-					<input type="submit" value="搜索"/ style="border:0;width:90px;height:34px;background:#f15c18;">
-				</form>
-				<span style="background: url(img/gou.png) no-repeat left center;">
+					<form class="search">
+						<input type="button" id="bt1" value="宝贝" />
+						<input type="text" id="text1" placeholder="请输入您要搜索商品的关键字">
+						<input type="submit" value="搜索" / style="border:0;width:90px;height:34px;background:#f15c18;color: white;">
+					</form>
+					<span style="background: url(img/gou.png) no-repeat left center;">
 					<a href="#">购物车结算></a></span>
 					<span style="background: url(img/shang.png) no-repeat left center;">
 					
 					<a href="#">我的商城></a></span>
-					
+
 					<ul class="nav1">
-						<li><a href="#">央广助农日</a>|</li>
-						<li><a href="#">3M</a>|</li>
-						<li><a href="#">达芙妮</a>|</li>
-						<li><a href="#">古方</a>|</li>
-						<li><a href="#">Vious Viutton</a>|</li>
-						<li><a href="#">迪士尼</a>|</li>
-						<li><a href="#">SIMETO</a></li>
+						<li>
+							<a href="#">央广助农日</a>|</li>
+						<li>
+							<a href="#">3M</a>|</li>
+						<li>
+							<a href="#">达芙妮</a>|</li>
+						<li>
+							<a href="#">古方</a>|</li>
+						<li>
+							<a href="#">Vious Viutton</a>|</li>
+						<li>
+							<a href="#">迪士尼</a>|</li>
+						<li>
+							<a href="#">SIMETO</a>
+						</li>
 					</ul>
-					
-					
-					
+
+				</div>
+
+				<div id="shops">
+					<ul>
+						<li style="width: 176px;background:#f15c18;">
+							<a href="#" style="color:white;">所有商品分类</a>
+						</li>
+						<li>
+							<a href="index.html" style="color: #f15c18;">首页</a>
+						</li>
+						<li>
+							<a href="#">TV直播</a>
+						</li>
+						<li>
+							<a href="#">品牌热卖</a>
+						</li>
+						<li>
+							<a href="#">今日特惠</a>
+						</li>
+						<li>
+							<a href="#">名品汇</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			
-			<div id="shops">
-				<ul>
-					<li style="width: 176px;background:#f15c18;color:white;"><a href="#">所有商品分类</a></li>
-					<li><a href="index.html">首页</a></li>
-					<li><a href="#">TV直播</a></li>
-					<li><a href="#">品牌热卖</a></li>
-					<li><a href="#">今日特惠</a></li>
-					<li><a href="#">名品汇</a></li>
-				</ul>
-			</div>
-			</div>
-			
-			
+
 		</div>
-		
-		
+
 		<!-------------footer1---------------------------------->
 		<div id="footer-1">
 			<img src="img/cti.png">
 		</div>
-		
+
 		<!-------------footer2---------------------------------->
 		<div id="footer-2">
 			<div class="content">
 				<ul class="ul-l">
 					<h3>公告</h3>
-					<li><a href="#">【公告】食品类商品售后政策...</a></li>
-					<li><a href="#">【公告】食品类商品售后政策...</a></li>
-					<li><a href="#">【公告】食品类商品售后政策...</a></li>
-					<li><a href="#">【公告】食品类商品售后政策...</a></li>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
 				</ul>
 				<ul>
 					<h3>购物指南</h3>
-					<li><a href="#">免费注册</a></li>
-					<li><a href="#">购物流程</a></li>
-					<li><a href="#">电子发票</a></li>
-					<li><a href="#">用户注册协议</a></li>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
 				</ul>
 				<ul>
 					<h3>购物指南</h3>
-					<li><a href="#">免费注册</a></li>
-					<li><a href="#">购物流程</a></li>
-					<li><a href="#">电子发票</a></li>
-					<li><a href="#">用户注册协议</a></li>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
 				</ul>
 				<ul>
 					<h3>购物指南</h3>
-					<li><a href="#">免费注册</a></li>
-					<li><a href="#">购物流程</a></li>
-					<li><a href="#">电子发票</a></li>
-					<li><a href="#">用户注册协议</a></li>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
 				</ul>
 				<ul>
 					<h3>购物指南</h3>
-					<li><a href="#">免费注册</a></li>
-					<li><a href="#">购物流程</a></li>
-					<li><a href="#">电子发票</a></li>
-					<li><a href="#">用户注册协议</a></li>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
 				</ul>
 				<ul style="padding-right: 0;">
 					<h3>购物指南</h3>
-					<li><a href="#">免费注册</a></li>
-					<li><a href="#">购物流程</a></li>
-					<li><a href="#">电子发票</a></li>
-					<li><a href="#">用户注册协议</a></li>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
 				</ul>
-				
-				
+
 			</div>
-			
-			
-			
+
 		</div>
 		<!-------------footer3---------------------------------->
-		
-		
-		
-		
-		
-		
+		<div id="footer-3">
+			<p>
+				<a href="index.html">首页</a>|
+				<a href="#">招商合作</a>|
+				<a href="#">关于央广购物</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">成为供应商</a>|
+				<a href="#">招贤纳士</a>
+			</p>
+
+			<p>
+				<span class="police">京公安备:10031346840131</span>
+				<span>京ICP备10038858号</span>
+				<span>食品流通许可证编号：SP1101151210063489</span>
+				<span>信息网络传播视听节目许可证 0102002号</span>
+			</p>
+			<p>
+				<span>Copyright©2010-2017 cnrmall.com All Rights Reserved</span>
+				<span>服务热线：4008-518-518</span>
+			</p>
+
+			<p>
+				<a href="#">
+					<img src="img/foot1.png" />
+				</a>
+				<a href="https://ss.knet.cn/verifyseal.dll">
+					<img src="img/foot2.png" />
+				</a>
+				<a href="https://credit.cecdc.com/CX63030000051620161107.html">
+					<img src="img/foot3.png" />
+				</a>
+				<a href="http://www.bj.cyberpolice.cn/index.do">
+					<img src="img/foot4.png" />
+				</a>
+			</p>
+		</div>
+		<div id="sides">
+		<ul id="bt">
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li class="last"><a href="#header">^top</a></li>
+		</ul>
+		</div>
+    		
 	</body>
+
 </html>
