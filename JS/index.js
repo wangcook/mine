@@ -77,3 +77,75 @@
 			function getStyle(obj, att) {
 				return window.getComputedStyle ? getComputedStyle(obj)[att] : obj.currentStyle[att];
 			}
+			
+
+
+
+
+
+
+/*********************轮播图*******************************/
+			$(function() {
+				//控制图片下标
+				var index=0;
+				//控制默认滚动效果开关
+				var onOff=true;
+				//默认自动滚动效果
+				setInterval(function(){
+					if(onOff){
+						index++;
+						index=changeView(index);
+					}else{
+						return
+					}
+				},1500)
+				//界面开关默认效果
+				$('#carousel').mouseover(function(){
+					$('#carousel span').css('display','block');
+					onOff=false;
+				}).mouseout(function(){
+					$('#carousel span').css('display','none');
+					onOff=true;
+				})
+				//添加上一张点击操作
+				$('span[class=pre]').click(function(){
+					
+					if(index<0){
+						index=4;
+					}else{
+						index--;
+					}
+					changeView(index);
+				})
+				//添加下一张点击操作
+				$('span[class=next]').click(function(){		
+					
+					if(index>4){
+						index=0;
+					}else{
+						index++;
+					}
+					changeView(index);
+				})
+				//点击索引的操作
+				$('#bt').delegate('li','click',function(){
+					index=$(this).index();
+					changeView(index);
+				})
+				//切换视图的函数
+				function changeView(index){
+					//调整下标
+					if(index<0){index=4};
+					if(index>4){index=0};
+					//动画效果
+					$('#cont').animate({
+						'left': -index*790
+					}, {
+						duration: 800
+					});
+					//索引样式
+					$('#bt li').eq(index).addClass('active').siblings().removeClass('active');
+					return index;
+				}
+			})
+		

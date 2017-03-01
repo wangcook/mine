@@ -115,7 +115,7 @@
 }
 #shops  ul{
 	margin-top: 10px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 #shops li{
 	float: left;
@@ -132,7 +132,6 @@
 	width: 100%;
 	height: 88px;
 	border-bottom: 1px solid gray;
-	/*background: blue;*/
 }
 #footer-1 img{
 	margin: 0 auto;
@@ -208,7 +207,7 @@
 
 
 
-#bt{
+#bt2{
 	width: 40px;
 	height: 181px;
 	position: absolute;
@@ -217,28 +216,28 @@
 	background:#483e39;
 }
 
-#bt li a {
+#bt2 li a {
 	display: block;
 				width: 35px;
 				height: 34px;
 }
-#bt li:nth-of-type(1) a{
+#bt2 li:nth-of-type(1) a{
 	background: url(img/toolbar_bg.png) no-repeat 0 0;
 }
-#bt li:nth-of-type(2) a{
+#bt2 li:nth-of-type(2) a{
 	background: url(img/toolbar_bg.png) no-repeat 0 -35px;
 }
-#bt li:nth-of-type(3) a{
+#bt2 li:nth-of-type(3) a{
 	background: url(img/toolbar_bg.png) no-repeat 0 -70px;
 }
-#bt li:nth-of-type(4) a{
+#bt2 li:nth-of-type(4) a{
 	background: url(img/toolbar_bg.png) no-repeat 0 -105px;
 }
-#bt li:nth-of-type(5) a{
+#bt2 li:nth-of-type(5) a{
 	background: url(img/toolbar_bg.png) no-repeat 0 -140px;
 }
 
-#bt .last{
+#bt2 .last{
 	width: 35px;
 	height: 35px;
 	text-align: center;
