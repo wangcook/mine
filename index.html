@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
 		<link rel="stylesheet" href="common.css" type="text/css" />
 		<script src="JQuery/jquery-1.11.1.js"></script>
-		
+
 	</head>
 
 	<body>
@@ -21,7 +21,8 @@
 					<li>|
 						<a href="#">我的订单</a>
 						<div class="menu">
-							<a href="#">待付款订单</a>
+							<a href="#" style="background: white;">我的订单</a>
+							<a href="html/mymenu.html">待付款订单</a>
 							<a href="#">待付款交易</a>
 							<a href="#">待付款收货</a>
 						</div>
@@ -29,13 +30,15 @@
 					<li>|
 						<a href="#">我的收藏</a>
 						<div class="menu">
+							<a href="#" style="background: white;">我的收藏</a>
 							<a href="#">店铺收藏</a>
 							<a href="#">商品收藏</a>
 						</div>
 					</li>
 					<li>|
-						<a href="#">客服服务</a>
+						<a href="#">售后服务</a>
 						<div class="menu">
+							<a href="#" style="background: white;">售后服务</a>
 							<a href="#">购物指南</a>
 							<a href="#">商家服务</a>
 							<a href="#">售后服务</a>
@@ -43,20 +46,15 @@
 						</div>
 					</li>
 					<script>
-						//						var div=$('div [class=menu]');
-
-						$('li').mouseover(function() {
+						//						
+						$('.mine').children('li').mouseover(function() {
 							var index = $(this).index();
-							var div = $('div [class=menu]');
-							$(this).css('border', '1px solid gray').css('border-bottom', 0);
-							div.eq(index - 1).css('display', 'block').css('border', '1px solid gray').css('border-top', 0);
+							$('.menu').eq(index - 1).css('display', 'block');
 
 						});
-						$('li').mouseout(function() {
-							var index = $(this).index();
-							var div = $('div [class=menu]');
-							div.css('display', 'none');
-							$(this).css('border', 0);
+						$('.mine').children('li').mouseout(function() {
+
+							$('.menu').css('display', 'none');
 
 						});
 					</script>
@@ -114,7 +112,7 @@
 							<ul id="food">
 								<li>
 									<a href="#">食品饮料</a>
-									
+
 								</li>
 								<li>
 									<a href="#">食品饮料</a>
@@ -140,41 +138,62 @@
 								<li style="border: 0;">
 									<a href="#">食品饮料</a>
 								</li>
-								
+
 								<div id="menu">
-										<p>
-												<b><a href="#">粮油调味</a>></b>
-												|<a href="#">米面粮油</a>
-												|<a href="#">食用油</a>
-												|<a href="#">调味品</a>
-												|<a href="#">南北干货</a>
-												|<a href="#">方便食品</a>
-												|<a href="#">有机食品</a>
-										</p>
-										
-										
-										<p>
-												<b><a href="#">粮油调味</a>></b>
-												|<a href="#">米面粮油</a>
-												|<a href="#">食用油</a>
-												|<a href="#">调味品</a>
-												|<a href="#">南北干货</a>
-												|<a href="#">方便食品</a>
-												|<a href="#">有机食品</a>
-										</p>
-										<p>
-												<b><a href="#">粮油调味</a>></b>
-												|<a href="#">米面粮油</a>
-												|<a href="#">食用油</a>
-												|<a href="#">调味品</a>
-												|<a href="#">南北干货</a>
-												|<a href="#">方便食品</a>
-												|<a href="#">有机食品</a>
-										</p>
-										
-									</div>
-								
-								
+									<p>
+										<b><a href="#">粮油调味</a>></b> |
+										<a href="#">米面粮油</a>
+										|
+										<a href="#">食用油</a>
+										|
+										<a href="#">调味品</a>
+										|
+										<a href="#">南北干货</a>
+										|
+										<a href="#">方便食品</a>
+										|
+										<a href="#">有机食品</a>
+									</p>
+
+									<p>
+										<b><a href="#">粮油调味</a>></b> |
+										<a href="#">米面粮油</a>
+										|
+										<a href="#">食用油</a>
+										|
+										<a href="#">调味品</a>
+										|
+										<a href="#">南北干货</a>
+										|
+										<a href="#">方便食品</a>
+										|
+										<a href="#">有机食品</a>
+									</p>
+									<p>
+										<b><a href="#">粮油调味</a>></b> |
+										<a href="#">米面粮油</a>
+										|
+										<a href="#">食用油</a>
+										|
+										<a href="#">调味品</a>
+										|
+										<a href="#">南北干货</a>
+										|
+										<a href="#">方便食品</a>
+										|
+										<a href="#">有机食品</a>
+									</p>
+
+								</div>
+								<script>
+									$('#food').delegate('li', 'mouseover', function() {
+										$('#menu').css('display', 'block');
+									});
+									$('#food').delegate('li', 'mouseout', function() {
+										$('#menu').css('display', 'none');
+									});
+								</script>
+
 							</ul>
 
 						</li>
@@ -229,7 +248,7 @@
 
 			<a href="#" style="float:right;">
 				<img src="img/db59e5b6f0e68a7e97fba9488611f979.gif" /></a>
-				<div id="major-suit" >
+			<div id="major-suit">
 				<h2>今日最大牌</h2>
 				<a href="#"><img src="img/a21a516f91c4879f9cae41b0e2f8a57b.jpg" /></a>
 				<p style="font-weight: bold;color: #000000;margin-top: 20px;">贵州山子生活</p>
@@ -347,19 +366,19 @@
 			
 			<ul>
 				<li id="li1">
-					<a href="#li1">热门推荐</a>
+					<a href="#commodity">热门推荐</a>
 					
 				</li>
 				<li id="li2">
-					<a href="#li2">食品饮料</a>
+					<a href="#commodity">食品饮料</a>
 					
 				</li>
 				<li id="li3">
-					<a href="#li3">热销名酒</a>
+					<a href="#commodity">热销名酒</a>
 					
 				</li>
 				<li id="li4">
-					<a href="#li4">营养保健</a>
+					<a href="#commodity">营养保健</a>
 					
 				</li>
 			</ul>
@@ -445,10 +464,7 @@
 					
 					
 				</ul>-->
-				
-				
-				
-				
+
 			</div>
 
 			<!----------------底部商标---------------------->
@@ -486,78 +502,77 @@
 			</div>
 
 		</div>
-		
+
 		<!----------------会员专享---------------------->
 		<div id="vip">
 			<div class="title">
 				会员专享
 				<ul class="car">
-					<li><a href="#">
-						<span>
+					<li>
+						<a href="#">
+							<span>
 							<img src="img/3530e342e690ef535ea8fefbfa4ba0a5.png" />
-						</span>
-						会员活动</a></li>
-					<li><a href="#">
-						<span>
+						</span> 会员活动
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
 							<img src="img/3eb3572e78223e54226d37cd4ee6b1cb.png" />
-						</span>
-						
-						会员权益</a></li>
-					<li><a href="#">
-						<span>
+						</span> 会员权益
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
 							<img src="img/d45a138961f4cdcf789e0e0dc4588c51.png" />
-						</span>
-						物流查询</a></li>
+						</span> 物流查询
+						</a>
+					</li>
 				</ul>
 			</div>
-			
-			
-			
+
 			<ul id="vip-c">
 				<li style="border: 0;">
 					<a>
-						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg"/>
+						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg" />
 					</a>
 					<p>红塔鲱鱼罐头超值组30罐装货号118127</p>
-					
+
 				</li>
 				<li>
 					<a>
-						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg"/>
+						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg" />
 					</a>
 					<p>红塔鲱鱼罐头超值组30罐装货号118127</p>
-					
+
 				</li>
 				<li>
 					<a>
-						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg"/>
+						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg" />
 					</a>
 					<p>红塔鲱鱼罐头超值组30罐装货号118127</p>
-					
+
 				</li>
 				<li>
 					<a>
-						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg"/>
+						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg" />
 					</a>
 					<p>红塔鲱鱼罐头超值组30罐装货号118127</p>
-					
+
 				</li>
 				<li>
 					<a>
-						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg"/>
+						<img src="img/cb3bdc5f763f4e9e6ef6d002640950b4.jpg@240w_240h.jpg" />
 					</a>
 					<p>红塔鲱鱼罐头超值组30罐装货号118127</p>
-					
+
 				</li>
-				
-				
+
 			</ul>
-			
-			
-			
-			
+
 		</div>
-		
 
 		<!-------------footer1---------------------------------->
 		<div id="footer-1">
@@ -701,26 +716,43 @@
 		<div id="sides">
 			<ul id="bt2">
 				<li>
-					<a href="#"></a>
+					<a href="#" class="a1"></a>
+					<div class="show">
+						<a href="#">商城会员</a>
+					</div>
 				</li>
 				<li>
-					<a href="#"></a>
+					<a href="#" class="a2"></a>
+					<div class="show">
+						<a href="#">购物车</a>
+					</div>
 				</li>
 				<li>
-					<a href="#"></a>
+					<a href="#" class="a3"></a>
+					<div class="show">
+						<a href="#">我的收藏</a>
+					</div>
 				</li>
 				<li>
-					<a href="#"></a>
+					<a href="#" class="a4"></a>
+					<div class="show">
+						<a href="#">我的足迹</a>
+					</div>
 				</li>
 				<li>
-					<a href="#"></a>
+					<a href="#" class="a5"></a>
+					<div class="show">
+						<a href="#">我的消息</a>
+					</div>
 				</li>
-				<li class="last">
-					<a href="#header">^top</a>
-				</li>
+
 			</ul>
+			<div class="last">
+				<a href="#header">TOP</a>
+			</div>
 		</div>
 
 	</body>
-<script src="JS/index.js"></script>
+	<script src="JS/index.js"></script>
+
 </html>

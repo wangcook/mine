@@ -3,10 +3,10 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>我的订单</title>
+		<title>购物指南</title>
 		<link rel="stylesheet" href="../resetCss/reset.css" type="text/css" />
+		<link rel="stylesheet" href="../css/help.css" />
 		<link rel="stylesheet" href="../common.css" type="text/css" />
-		<link rel="stylesheet" href="../css/mymenu.css" type="text/css" />
 		<script src="../img/hm.js"></script>
 		<script src="../JQuery/jquery-1.11.1.js"></script>
 	</head>
@@ -120,7 +120,6 @@
 						<li>
 							<a href="#">今日特惠</a>
 						</li>
-
 						<li>
 							<a href="#">名品汇</a>
 						</li>
@@ -130,168 +129,238 @@
 
 		</div>
 
-		<!----------------------会员--------------------------->
+		<!----------------------主体--------------------------->
+		<div id="main">
 
-		<div id="member">
-			<div class="m-content">
-				<span>
-					<img src="../img/avatar.gif" />
-					<ul>
-						<p><a href="#">WXW380733232</a></p>
-						<li>会员等级：<b>注册会员</b></li>
-						<li>财户安全：</li>
-						<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积&nbsp;&nbsp;分&nbsp;:  15</li>
-						<li>&nbsp;&nbsp;&nbsp;购物卡：￥0:00</li>
-						<li>&nbsp;&nbsp;&nbsp;辛福金：￥0:00</li>
+			<h2><a href="../index.html">首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;文章</h2>
+
+			<div class="article">
+
+				<div class="ul1">
+					<p>文章分类</p>
+					<ul class="u1">
+						<li>
+							<a href="#">购物指南</a>
+						</li>
+						<li>
+							<a href="#">支付配送</a>
+						</li>
+						<li>
+							<a href="#">售后服务</a>
+						</li>
+						<li>
+							<a href="#">招商合作</a>
+						</li>
+
 					</ul>
-				</span>
-				<div class="collect">
-					<dl>
-						<dt>收藏中</dt>
-						<dd id="shoe">
-							<a href="#"><b class="b1"></b>商品</a>
-							<a href="#"><b class="b2"></b>商铺</a>
-							<a href="#"><b class="b3"></b>足迹</a>
-						</dd>
-					</dl>
-					<dl>
-						<dt>收藏中</dt>
-						<dd class="shoe1">
-							<a href="#"><b class="b1"></b>商品</a>
-							<a href="#"><b class="b2"></b>商铺</a>
-							<a href="#"><b class="b3"></b>足迹</a>
-						</dd>
-					</dl>
-					<dl>
-						<dt>收藏中</dt>
-						<dd class="shoe">
-							<a href="#"><b class="b1"></b>商品</a>
-							<a href="#"><b class="b2"></b>商铺</a>
-							<a href="#"><b class="b3"></b>足迹</a>
-						</dd>
-					</dl>
-					<script>
-						var a = $('#shoe').find('a');
+					<ul class="u2">
+						<li>
+							<a href="#">商家服务</a>
+						</li>
+						<li>
+							<a href="member.html">会员中心</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+					</ul>
 
-						a.hover(function() {
-								//						var b=this.find('b');
-								$(this).css('color', 'red');
-								//						b.css('background',)
-
-							},
-							function() {
-								//					var b=this.find('b');
-								$(this).css('color', 'gray');
-
-							})
-					</script>
 				</div>
-			</div>
-		</div>
 
-		<!--/***********list***************************/-->
-
-		<div id="list">
-
-			<div id="deal">
-				<div>
-					<p>交易中心<input type="button" value="^" /></p>
-					<ul>
+				<div class="ul2">
+					<p>最新文章</p>
+					<ul class="u3">
 						<li>
-							<a href="#">商品订单</a>
+							<a href="#">购物指南</a>
 						</li>
 						<li>
-							<a href="#">历史订单</a>
+							<a href="#">支付配送</a>
 						</li>
 						<li>
-							<a href="#">交易评价</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<p>客户服务<input type="button" value="^" /></p>
-					<ul>
-						<li>
-							<a href="#">退款及退货</a>
+							<a href="#">售后服务</a>
 						</li>
 						<li>
-							<a href="#">交易投诉</a>
+							<a href="#">招商合作</a>
 						</li>
 						<li>
-							<a href="#">商品咨询</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<p>会员资料<input type="button" value="^" /></p>
-					<ul>
-						<li>
-							<a href="#">账户信息</a>
+							<a href="#">购物指南</a>
 						</li>
 						<li>
-							<a href="#">账户安全</a>
+							<a href="#">支付配送</a>
 						</li>
 						<li>
-							<a href="#">收货地址</a>
+							<a href="#">售后服务</a>
 						</li>
 						<li>
-							<a href="#">我的消息</a>
+							<a href="#">招商合作</a>
 						</li>
 						<li>
-							<a href="#">第三方账户登录</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<p>财产中心<input type="button" value="^" /></p>
-					<ul>
-						<li>
-							<a href="#">我的积分</a>
+							<a href="#">购物指南</a>
 						</li>
 						<li>
-							<a href="#">我的优惠券</a>
+							<a href="#">支付配送</a>
 						</li>
 						<li>
-							<a href="#">我的红包</a>
+							<a href="#">售后服务</a>
 						</li>
 						<li>
-							<a href="#">我的卡充值</a>
+							<a href="#">招商合作</a>
+						</li>
+						<li>
+							<a href="#">购物指南</a>
+						</li>
+						<li>
+							<a href="#">支付配送</a>
+						</li>
+						<li>
+							<a href="#">售后服务</a>
+						</li>
+						<li>
+							<a href="#">招商合作</a>
 						</li>
 					</ul>
 
-					<script>
-						$('#deal>div>p').click(function() {
-
-							//1、获取下一个兄弟元素，然后设置为显示或隐藏
-							$(this).next().toggle(800);
-						})
-					</script>
 				</div>
 
 			</div>
-			<!----------------仓库------------------------>
-			<div id="warehouse">
-				<div class="remind">
-					<h2>交易提醒
-					<a style="margin-left: 70px;" href="#">待付款&nbsp;&nbsp;<span>0</span></a>|
-					<a href="#">待收货&nbsp;&nbsp;<span>0</span></a>|
-					<a href="#">待评价&nbsp;&nbsp;<span>0</span></a>
-					</h2>
+
+			<div class="guide">
+				<div class="helper">
+
+					<p>购物指南</p>
+					<ul>
+						<li>
+							<a href="#">免费注册</a>
+						</li>
+						<li>
+							<a href="#">购物流程</a>
+						</li>
+						<li>
+							<a href="#">用户注册协议</a>
+						</li>
+						<li>
+							<a href="#">电子发票</a>
+						</li>
+
+					</ul>
 
 				</div>
-				<div class="shopping-car">
-					<h2>购物车</h2>
+
+				<div class="botton">
+					<input type="button" value="首页" />
+					<input type="button" value="上一页" />
+					<input type="button" value="1" style="background: #f15c18;" />
+					<input type="button" value="下一页" />
+					<input type="button" value="尾页" />
+
 				</div>
-				<div class="shop">
-					<h2>商品收藏</h2>
-				</div>
-				<div class="store">
-					<h2>店铺收藏</h2>
-				</div>
+
 			</div>
 
 		</div>
 
+		<!-------------footer1---------------------------------->
+		<div id="footer-1">
+			<img src="../img/cti.png">
+		</div>
+
+		<!-------------footer2---------------------------------->
+		<div id="footer-2">
+			<div class="content">
+				<ul class="ul-l">
+					<h3>公告</h3>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
+					<li>
+						<a href="#">【公告】食品类商品售后政策...</a>
+					</li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
+				</ul>
+				<ul>
+					<h3>购物指南</h3>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
+				</ul>
+				<ul style="padding-right: 0;">
+					<h3>购物指南</h3>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">购物流程</a>
+					</li>
+					<li>
+						<a href="#">电子发票</a>
+					</li>
+					<li>
+						<a href="#">用户注册协议</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
 		<!-------------footer3---------------------------------->
 		<div id="footer-3">
 			<p>

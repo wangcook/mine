@@ -3,11 +3,11 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>我的订单</title>
+		<title>会员基本信息</title>
 		<link rel="stylesheet" href="../resetCss/reset.css" type="text/css" />
+		<link rel="stylesheet" href="../css/mymenu.css" />
 		<link rel="stylesheet" href="../common.css" type="text/css" />
-		<link rel="stylesheet" href="../css/mymenu.css" type="text/css" />
-		<script src="../img/hm.js"></script>
+		<link rel="stylesheet" href="../css/basic information.css" type="text/css" />
 		<script src="../JQuery/jquery-1.11.1.js"></script>
 	</head>
 
@@ -31,7 +31,7 @@
 						<a href="#">我的收藏</a>
 						<div class="menu">
 							<a href="#" style="background: white;">我的收藏</a>
-							<a href="#">店铺收藏</a>
+							<a href="mycollect.html">店铺收藏</a>
 							<a href="#">商品收藏</a>
 						</div>
 					</li>
@@ -120,7 +120,6 @@
 						<li>
 							<a href="#">今日特惠</a>
 						</li>
-
 						<li>
 							<a href="#">名品汇</a>
 						</li>
@@ -270,24 +269,56 @@
 
 			</div>
 			<!----------------仓库------------------------>
-			<div id="warehouse">
-				<div class="remind">
-					<h2>交易提醒
-					<a style="margin-left: 70px;" href="#">待付款&nbsp;&nbsp;<span>0</span></a>|
-					<a href="#">待收货&nbsp;&nbsp;<span>0</span></a>|
-					<a href="#">待评价&nbsp;&nbsp;<span>0</span></a>
-					</h2>
+			<div id="collent">
 
-				</div>
-				<div class="shopping-car">
-					<h2>购物车</h2>
-				</div>
-				<div class="shop">
-					<h2>商品收藏</h2>
-				</div>
-				<div class="store">
-					<h2>店铺收藏</h2>
-				</div>
+				<ul class="ul1">
+					<li>
+						<a href="#">
+							<h2>基本信息</h2></a>
+					</li>
+					<li>
+						<a href="#">
+							<h2>更改头像</h2></a>
+					</li>
+				</ul>
+				<form>
+					<p style="margin-top: 10px;"><span>用户名：</span>wxw380733232</p>
+					<p><span>邮箱：</span>邮箱还未绑定请点击
+						<a href="#">绑定邮箱</a>
+					</p>
+					<p><span>手机号：</span>188****8888
+						<a href="#">更换手机</a>
+					</p>
+					<p><span>真实姓名：</span><input class="in1" type="text" required="required"></p>
+					<p><span>性别：</span>
+						<input type="radio" name="sex" checked="checked" />保密
+						<input type="radio" name="sex" />男
+						<input type="radio" name="sex" />女
+
+					</p>
+					<p><span>生日：</span>
+						<input class="in1" type="text" required="required">
+
+					</p>
+					<p><span>所在地区：</span>
+						<select>
+							<option>所在地区</option>
+							<option>北京</option>
+							<option>上海</option>
+							<option>杭州</option>
+							<option>深圳</option>
+							<option>农村</option>
+
+						</select>
+
+					</p>
+					<p><span>QQ：</span><input class="in1" type="text" required="required"></p>
+					<p><span>阿里旺旺：</span><input class="in1" type="text" required="required"></p>
+
+					<p style="border: 0;"><input class="in2" type="submit" value="保存并修改"></p>
+
+				</form>
+
 			</div>
 
 		</div>

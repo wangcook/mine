@@ -1,34 +1,36 @@
 @charset "utf-8";
+
 /* track base Css */
 
-#ehong-code-input{
-	width:42px;
-	letter-spacing:2px;
-	margin:0px 8px 0px 0px;
+#ehong-code-input {
+	width: 42px;
+	letter-spacing: 2px;
+	margin: 0px 8px 0px 0px;
 }
-.ehong-idcode-val{
-	position:relative;
-	padding:1px 4px 1px 4px;
-	top:0px;
-	*top:-3px;
-	letter-spacing:4px;
+
+.ehong-idcode-val {
+	position: relative;
+	padding: 1px 4px 1px 4px;
+	top: 0px;
+	*top: -3px;
+	letter-spacing: 4px;
 	display: block;
 	width: 100px;
 	text-align: center;
-	display:inline;
-	cursor:pointer;
-	font-size:20px;
-	font-family:"Courier New", Courier, monospace;
-	text-decoration:none;
-	font-weight:bold;
+	display: inline;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: "Courier New", Courier, monospace;
+	text-decoration: none;
+	font-weight: bold;
 }
 
-.ehong-code-val-tip{
-	font-size:20px;
-	color:#1098EC;
-	top:0px;
-	*top:-3px;	
-	position:relative;	
-	margin:0px 0px 0px 4px;
-	cursor:pointer;	
+.ehong-code-val-tip {
+	font-size: 20px;
+	color: #1098EC;
+	top: 0px;
+	*top: -3px;
+	position: relative;
+	margin: 0px 0px 0px 4px;
+	cursor: pointer;
 }

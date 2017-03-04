@@ -1,0 +1,41 @@
+#collent {
+	width: 1032px;
+	height: 580px;
+	float: right;
+}
+
+#collent .ul1 {
+	width: 1000px;
+	height: 40px;
+	margin: 0 auto;
+	border-bottom: 1px solid gray;
+}
+
+#collent .ul1 li {
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+}
+
+#collent .ul1 .li1 {
+	border-bottom: 2px solid red;
+}
+
+#collent h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#collent .ul2 {
+	border-top: 1px solid gray;
+	padding-top: 15px;
+}
+
+#collent .ul2 li {
+	padding-left: 92px;
+	font-size: 13px;
+	color: #999999;
+	float: left;
+}

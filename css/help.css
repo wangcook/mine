@@ -1,0 +1,98 @@
+#main {
+	width: 1210px;
+	min-height: 500px;
+	margin: 10px auto;
+	position: relative;
+}
+
+#main h2 {
+	height: 48px;
+	padding-left: 20px;
+	line-height: 48px;
+	font-size: 13px;
+	background: url(../img/home.png) no-repeat left center;
+}
+
+#main .article {
+	width: 210px;
+}
+
+#main .article .ul1 {
+	width: 210px;
+	border: 1px solid gray;
+	border-top: 2px solid red;
+	min-height: 158px;
+}
+
+#main .article p {
+	padding-left: 7px;
+	line-height: 36px;
+	background: gray;
+	box-sizing: border-box;
+}
+
+#main .article .ul1 ul {
+	margin-top: 8px;
+	float: left;
+	width: 105px;
+}
+
+#main .article ul li {
+	width: 104px;
+	text-align: center;
+}
+
+#main .article .u2 li {
+	border-left: 1px dashed gray;
+}
+
+#main .article .ul2 {
+	margin-top: 20px;
+	border: 1px solid gray;
+}
+
+#main .article .ul2 .u3 {
+	list-style: inherit;
+}
+
+#main .guide {
+	width: 960px;
+	min-height: 500px;
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+
+#main .guide .helper {
+	width: 940px;
+	min-height: 200px;
+	border: 1px solid gray;
+	padding-left: 20px;
+}
+
+#main .guide p {
+	line-height: 50px;
+	font-size: 21px;
+}
+
+#main .guide .helper ul {
+	list-style: inherit;
+	padding-left: 15px;
+	line-height: 28px;
+}
+
+#main .guide .botton {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#main .guide .botton input {
+	background: white;
+	border-radius: 5px;
+	color: #aaaab6;
+	padding: 5px;
+}
+
+#footer-1 {
+	border-top: 1px solid gray;
+}

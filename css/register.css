@@ -1,14 +1,16 @@
-header{
+header {
 	width: 100%;
 	height: 80px;
 }
-#register{
+
+#register {
 	width: 1000px;
 	margin: auto;
 	/*background: red;*/
 	height: 80px;
 }
-#register img{
+
+#register img {
 	display: inline-block;
 	margin-top: 10px;
 }
@@ -16,42 +18,43 @@ header{
 
 /*右边*/
 
-
-#register .reg-con{
+#register .reg-con {
 	margin-top: 20px;
 	float: right;
 	height: 40px;
 	font-size: 14px;
 }
-#register .reg-con span:nth-of-type(1){
+
+#register .reg-con span:nth-of-type(1) {
 	display: inline-block;
 	width: 40px;
-	height:40px;
-	
+	height: 40px;
 }
-#register .reg-con span:nth-of-type(1) img{
-	width:40px;
+
+#register .reg-con span:nth-of-type(1) img {
+	width: 40px;
 	height: 40px;
 	border-radius: 20px;
 }
 
 
-
 /****************main**********************/
-#main{
+
+#main {
 	width: 1000px;
 	height: 600px;
 	margin: 20px auto;
 	position: relative;
 }
-#main .sale{
+
+#main .sale {
 	width: 450px;
 	height: 350px;
 	float: left;
 	margin: 30px 0;
 }
 
-#main .enter{
+#main .enter {
 	width: 440px;
 	padding: 20px;
 	height: 410px;
@@ -59,12 +62,13 @@ header{
 	border: 1px solid gray;
 	border-radius: 5px;
 }
-#main .enter p{
-	width:440px;
+
+#main .enter p {
+	width: 440px;
 	height: 60px;
-	
 }
-#main .enter p a{
+
+#main .enter p a {
 	display: inline-block;
 	width: 220px;
 	height: 50px;
@@ -72,48 +76,56 @@ header{
 	float: left;
 	text-align: center;
 	border-bottom: 1px solid gray;
-	}
-.active{
+}
+
+.active {
 	color: #ff500b;
 	background: url(../img/line.png) no-repeat left bottom;
 	border: 0;
 }
-#main .enter .input-c{
+
+#main .enter .input-c {
 	width: 350px;
 	height: 335px;
 	padding: 20px 35px;
 }
-#main .enter .input-c p{
-	padding-left: 20px ;
-	width:328px;
-	height:50px;
+
+#main .enter .input-c p {
+	padding-left: 20px;
+	width: 328px;
+	height: 50px;
 	border: 1px solid gray;
 	border-bottom: 0;
 	line-height: 50px;
 }
-#main .enter .input-c input{
+
+#main .enter .input-c input {
 	/*width: 180px;*/
 	height: 40px;
 	font-size: 14px;
 	border: 0;
 	padding-left: 35px;
 }
-#main .enter .input-c p strong{
+
+#main .enter .input-c p strong {
 	width: 100px;
-	height:50px;
+	height: 50px;
 	background: gray;
 	float: right;
 }
-#main .enter .input-c div a{
+
+#main .enter .input-c div a {
 	float: right;
 	/*color: blue;*/
 }
-#wei{
+
+#wei {
 	padding-top: 20px;
 	position: relative;
 }
-#wei a{
-	display:inline-block;
+
+#wei a {
+	display: inline-block;
 	width: 64px;
 	height: 40px;
 	position: absolute;
@@ -121,15 +133,19 @@ header{
 	left: 0;
 	color: gray;
 }
-#wei a span{
-	display:inline-block;
+
+#wei a span {
+	display: inline-block;
 	width: 32px;
 	height: 32px;
 	background: url(../img/login_pic.png) no-repeat -64px 0;
 }
+
+
 /************验证码*********/
-.code {
-/*background-image: url(code.jpg);*/
+
+
+/*.code {
 font-family: Arial;
 font-style: italic;
 color: Red;
@@ -140,4 +156,4 @@ font-weight: bolder;
 }
 .unchanged {
 border: 0;
-}
+}*/

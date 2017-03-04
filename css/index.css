@@ -113,73 +113,6 @@
 }
 
 
-/**************所有商品分类*************/
-
-#food {
-	width: 176px;
-	height: 480px;
-	/*padding: 0 13px;*/
-	background: #343a3a;
-	position: absolute;
-	top: 30px;
-	z-index: 2;
-}
-
-#shops  #food li {
-	width: 176px;
-	height: 52px;
-	line-height: 51px;
-	border-bottom: 1px dashed gray;
-	background: url(../img/5b353fc60be7ca7eec0476dc3f029a67.png) no-repeat 20px center;
-}
- #shops #food li a{
-	font-size: 16px;
-	color: white;
-}
-#shops #food li:hover a{
-	color: red;
-}
-#shops #food li:hover{
-	background: url(../img/adaff853e012a980a9f625e510dc9bdd.png) white no-repeat 20px center;
-	border-right: 1px solid white;
-	margin-left: 1px;
-}
-#shops #food #menu{
-	width:805px;
-	min-height: 460px;
-	position: absolute;
-	z-index:100;
-	top: 0;
-	left: 176px;
-	border-right: 1px solid gray;
-	border-bottom: 1px solid gray;
-	padding: 10px;
-	background: white;
-	display: none;
-}
-#shops #food #menu p{
-	height: 40px;
-	line-height: 40px;
-	text-align: left;
-	color: darkgray;
-}
-#shops #food #menu p a{
-	margin: 0 15px;
-	color: darkgray;
-}
-#shops #food .#menu p a:hover{
-	color: red;
-}
-#shops #food #menu p b a{
-	margin: 0 15px;
-	color: black;
-	
-}
-
-
-
-
-
 /**************今日最大牌*************/
 
 #major-suit {
@@ -189,7 +122,7 @@
 	background: rgba(0, 0, 0, 0.2);
 	padding: 10px;
 	top: 80px;
-	right:0;
+	right: 0;
 	z-index: 3;
 	text-align: center;
 	/*margin: 10px 0;*/
@@ -428,9 +361,11 @@
 #brand a img {
 	width: 115px;
 }
+
+
 /**************酒水数据*************/
 
-#commodity{
+#commodity {
 	width: 1000px;
 	height: 474px;
 	position: absolute;
@@ -438,45 +373,51 @@
 	right: 0;
 	/*background:red;*/
 }
-#commodity li{
+
+#commodity .wine-list1 a {
+	float: left;
+}
+
+#commodity li {
 	float: left;
 	width: 162px;
 	height: 230px;
 	border-bottom: 1px solid gray;
 	border-left: 1px solid gray;
 	padding: 6px 17px 0;
-	
 }
 
-#commodity li p{
+#commodity li p {
 	font-size: 14px;
 	margin-left: 10px;
 	height: 40px;
 }
-#commodity li img{
-	width:130px;
+
+#commodity li img {
+	width: 130px;
 	height: 130px;
 	text-align: center;
 	display: inline-block;
 	margin: 20px 0 0 20px;
 }
-#commodity li span{
+
+#commodity li span {
 	color: red;
 	margin-left: 10px;
 }
 
 
-
 /**************会员专享*************/
-#vip{
+
+#vip {
 	width: 1210px;
 	height: 350px;
 	margin: 10px auto;
 	border: 1px solid #f15c18;
 	border-top: 2px solid #f15c18;
-	
 }
-#vip .title{
+
+#vip .title {
 	height: 50px;
 	line-height: 50px;
 	padding-left: 64px;
@@ -484,47 +425,50 @@
 	font-size: 20px;
 	background: url(../img/vip.png) #f2f2f2 no-repeat 25px center;
 }
-#vip .car{
+
+#vip .car {
 	float: right;
-	
 }
-#vip .car li{
+
+#vip .car li {
 	float: left;
 }
-#vip .car li a{
+
+#vip .car li a {
 	display: inline-block;
 	margin-right: 40px;
 }
-#vip .car li a span{
+
+#vip .car li a span {
 	float: left;
 	margin-right: 5px;
 }
 
-#vip-c{
+#vip-c {
 	width: 100%;
 	padding: 0 20px;
 }
 
-#vip-c li{
+#vip-c li {
 	height: 300px;
 	width: 203px;
 	border-left: 1px solid gray;
 	float: left;
 	padding: 0 15px;
 }
-#vip-c li a img{
+
+#vip-c li a img {
 	width: 205px;
 }
-#vip-c li a{
+
+#vip-c li a {
 	float: left;
 	margin-bottom: 30px;
 }
-#vip-c li p{
+
+#vip-c li p {
 	width: 173px;
 	font-size: 13px;
 	color: gray;
 	line-height: 26px;
 }
-
-
-

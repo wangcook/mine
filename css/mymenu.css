@@ -1,102 +1,123 @@
 /************************会员***********************/
-#member{
-	width:100%;
+
+#member {
+	width: 100%;
 	height: 150px;
 	border: 2px solid gray;
 }
-#member .m-content{
+
+#member .m-content {
 	width: 1210px;
 	height: 150px;
 	/*background: red;*/
 	margin: 0 auto;
 }
-#member .m-content span{
+
+#member .m-content span {
 	display: inline-block;
 	width: 300px;
 	height: 115px;
 	padding-top: 20px;
 }
-#member .m-content span img{
-	width:96px;
+
+#member .m-content span img {
+	width: 96px;
 	height: 96px;
 	border-radius: 48px;
 	display: inline-block;
 }
-#member .m-content span ul{
+
+#member .m-content span ul {
 	width: 180px;
 	float: right;
 }
-#member .m-content span ul p{
+
+#member .m-content span ul p {
 	height: 23px;
 }
-#member .m-content span ul li{
+
+#member .m-content span ul li {
 	font-size: 11px;
 	color: gray;
 	line-height: 18px;
 }
+
+
 /*************右边dl***************/
-#member .m-content .collect{
+
+#member .m-content .collect {
 	width: 892px;
-	height:120px;
+	height: 120px;
 	/*background: green;*/
 	float: right;
 	margin: 15px 0 15px 8px;
 	border-left: 1px dashed gray;
 }
-#member .m-content .collect dl{
+
+#member .m-content .collect dl {
 	width: 265px;
 	height: 108px;
 	float: left;
 }
-#member .m-content .collect dl dt{
+
+#member .m-content .collect dl dt {
 	width: 56px;
 	padding-left: 10px;
 }
-#member .m-content .collect dl dd{
+
+#member .m-content .collect dl dd {
 	padding: 20px 15px 0 50px;
 }
-#member .m-content .collect dl dd a{
-	display:inline-block;
+
+#member .m-content .collect dl dd a {
+	display: inline-block;
 	width: 50px;
 	height: 80px;
 	text-align: center;
 }
-#member .m-content .collect dl dd b{
+
+#member .m-content .collect dl dd b {
 	width: 45px;
 	height: 45px;
-	display:inline-block;
+	display: inline-block;
 	margin-right: 10px;
 }
-#member .m-content .collect dl dd .b1{
+
+#member .m-content .collect dl dd .b1 {
 	background: url(../img/member_pics.png) no-repeat -100px -478px;
 }
-#member .m-content .collect dl dd .b2{
+
+#member .m-content .collect dl dd .b2 {
 	background: url(../img/member_pics.png) no-repeat -150px -478px;
 }
-#member .m-content .collect dl dd .b3{
+
+#member .m-content .collect dl dd .b3 {
 	background: url(../img/member_pics.png) no-repeat -200px -478px;
 }
 
 
 /*************list***************/
 
-#list{
+#list {
 	width: 1210px;
 	height: 680px;
 	margin: 20px auto;
 	/*background: red;*/
 }
-#deal{
+
+#deal {
 	width: 130px;
 	height: 680px;
-	float:left;
+	float: left;
 	border-right: 1px solid gray;
 	font-size: 14px;
-} 
-#deal ul{
-	margin-bottom:25px;
 }
-#deal input{
+
+#deal ul {
+	margin-bottom: 25px;
+}
+
+#deal input {
 	border: 0;
 	background: white;
 	padding-left: 24px;
@@ -105,48 +126,54 @@
 
 
 /***************仓库*************/
-#warehouse{
+
+#warehouse {
 	width: 1032px;
 	height: 580px;
 	float: right;
 }
-#warehouse div{
+
+#warehouse div {
 	border: 1px solid gray;
 }
-#warehouse .remind{
+
+#warehouse .remind {
 	width: 680px;
 	height: 320px;
 	float: left;
 }
-#warehouse h2{
+
+#warehouse h2 {
 	border-left: 3px solid #fd6760;
-	font-size:14px;
+	font-size: 14px;
 	font-weight: bold;
 	color: gray;
-	padding-left:20px;
+	padding-left: 20px;
 	margin-left: 20px;
 }
-#warehouse h2 a{
+
+#warehouse h2 a {
 	margin: 0 20px;
 }
-#warehouse h2 a span{
+
+#warehouse h2 a span {
 	color: red;
 }
-#warehouse .shopping-car{
+
+#warehouse .shopping-car {
 	width: 346px;
 	height: 320px;
 	float: left;
 }
-#warehouse .shop{
+
+#warehouse .shop {
 	width: 680px;
 	height: 245px;
 	float: left;
 }
-#warehouse .store{
+
+#warehouse .store {
 	width: 346px;
 	height: 245px;
 	float: left;
 }
-
-
-

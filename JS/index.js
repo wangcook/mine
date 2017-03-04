@@ -202,49 +202,41 @@ $(function() {
 //	}
 //
 //})
-$('#food').delegate('li', 'mouseover', function() {
-	$('#menu').css('display', 'block');
-});
-$('#food').delegate('li', 'mouseout', function() {
-	$('#menu').css('display', 'none');
-});
-
 
 //             1 获取品的数据
 
-$('#li1').click(function() {
-	
-	if($('.wine-list2')){
-		$('.wine-list2').css('display','none');
-		
+$(function() {
+
+	if($('.wine-list2')) {
+		$('.wine-list2').css('display', 'none');
+
 	}
-	if($('.wine-list3')){
-		$('.wine-list3').css('display','none');
-		
+	if($('.wine-list3')) {
+		$('.wine-list3').css('display', 'none');
+
 	}
-	
-	if($('.wine-list4')){
-		$('.wine-list4').css('display','none');
-		
+
+	if($('.wine-list4')) {
+		$('.wine-list4').css('display', 'none');
+
 	}
-	
+
 	$.ajax({
 		type: "get",
 		url: "json/hode.json",
 		async: true,
 		success: function(response) {
-			var $ul = $('<ul class="wine-list1"></ul>');
+			var $ul = $('<div class="wine-list1"></div>');
 
 			$(response).each(function(index, value) {
 
-				var $li = $('<li></li>');
 				var $a = $('<a href="#"></a>');
 				var $img = $('<img />');
 				$img.prop('src', response[index].src);
 
+				$a.appendTo($ul);
+
 				$ul.appendTo($('#commodity'));
-				$li.appendTo($ul);
-				$a.appendTo($li);
 				$a.append($img);
 
 				//				var temp=response[index];
@@ -258,42 +250,43 @@ $('#li1').click(function() {
 	});
 });
 
+//热销点击
 
+$('#li1').click(function() {
+	if($('.wine-list4')) {
+		$('.wine-list4').css('display', 'none');
 
+	};
 
+	if($('.wine-list3')) {
+		$('.wine-list3').css('display', 'none');
 
+	};
+	if($('.wine-list2')) {
+		$('.wine-list2').css('display', 'none');
 
+	};
+	$('.wine-list1').css('display', 'block');
 
-
-
-
-
-
-
-
-
-
-
-
+});
 
 //             2 获取酒水的数据
 
 $('#li2').click(function() {
-	if($('.wine-list4')){
-		$('.wine-list4').css('display','none');
-		
+	if($('.wine-list4')) {
+		$('.wine-list4').css('display', 'none');
+
 	}
-	
-	if($('.wine-list3')){
-		$('.wine-list3').css('display','none');
-		
+
+	if($('.wine-list3')) {
+		$('.wine-list3').css('display', 'none');
+
 	}
-	if($('.wine-list1')){
-		$('.wine-list1').css('display','none');
-		
+	if($('.wine-list1')) {
+		$('.wine-list1').css('display', 'none');
+
 	}
-	
-	
+
 	$.ajax({
 		type: "get",
 		url: "json/wine.json",
@@ -329,27 +322,23 @@ $('#li2').click(function() {
 
 });
 
-
-
-
 //             4 获取营养品的数据
 
 $('#li4').click(function() {
-	
-	if($('.wine-list2')){
-		$('.wine-list2').css('display','none');
-		
+
+	if($('.wine-list2')) {
+		$('.wine-list2').css('display', 'none');
+
 	}
-	if($('.wine-list3')){
-		$('.wine-list3').css('display','none');
-		
+	if($('.wine-list3')) {
+		$('.wine-list3').css('display', 'none');
+
 	}
-	if($('.wine-list1')){
-		$('.wine-list1').css('display','none');
-		
+	if($('.wine-list1')) {
+		$('.wine-list1').css('display', 'none');
+
 	}
-	
-	
+
 	$.ajax({
 		type: "get",
 		url: "json/nourishing.json",
@@ -389,20 +378,20 @@ $('#li4').click(function() {
 
 //             3 获取营养品的数据
 $('#li3').click(function() {
-	
-	if($('.wine-list2')){
-		$('.wine-list2').css('display','none');
-		
+
+	if($('.wine-list2')) {
+		$('.wine-list2').css('display', 'none');
+
 	}
-	if($('.wine-list4')){
-		$('.wine-list4').css('display','none');
-		
+	if($('.wine-list4')) {
+		$('.wine-list4').css('display', 'none');
+
 	}
-	if($('.wine-list1')){
-		$('.wine-list1').css('display','none');
-		
+	if($('.wine-list1')) {
+		$('.wine-list1').css('display', 'none');
+
 	}
-	
+
 	$.ajax({
 		type: "get",
 		url: "json/witer.json",
@@ -436,3 +425,48 @@ $('#li3').click(function() {
 		}
 	});
 });
+
+//                    侧边栏的按钮操作
+
+$('#bt2>li').eq(0).hover(function() {
+		$(this).children('div').css('right', 40);
+	},
+
+	function() {
+		$(this).children('div').css('right', -66);
+	})
+
+$('#bt2>li').eq(1).hover(function() {
+		$(this).children('div').css('right', 40);
+	},
+
+	function() {
+		$(this).children('div').css('right', -66);
+	})
+
+$('#bt2>li').eq(2).hover(function() {
+		$(this).children('div').css('right', 40);
+	},
+
+	function() {
+		$(this).children('div').css('right', -66);
+	}
+)
+
+$('#bt2>li').eq(3).hover(function() {
+		$(this).children('div').css('right', 40);
+	},
+
+	function() {
+		$(this).children('div').css('right', -66);
+	})
+
+$('#bt2>li').eq(4).hover(function() {
+		$(this).children('div').css('right', 40);
+	},
+
+	function() {
+		$(this).children('div').css('right', -66);
+	}
+
+)

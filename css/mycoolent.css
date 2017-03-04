@@ -1,0 +1,28 @@
+/***************仓库*************/
+
+#collent {
+	width: 1032px;
+	height: 580px;
+	float: right;
+}
+
+#collent ul {
+	width: 1000px;
+	height: 40px;
+	margin: 0 auto;
+	border-bottom: 1px solid gray;
+}
+
+#collent ul li {
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 2px solid red;
+}
+
+#collent h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: red;
+}
