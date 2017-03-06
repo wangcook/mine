@@ -102,6 +102,28 @@
 	border: 1px solid #f15c18;
 	display: inline-block;
 }
+#log .log-r span .car{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width:400px;
+	height: 180px;
+	border: 1px solid gray;
+	z-index: 10000;
+}
+#log .log-r span .message{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width:300px;
+	height:250px;
+	border: 1px solid gray;
+	z-index: 10000;
+}
+
+
+
+
 
 #log .log-r .search input:nth-of-type(3) {
 	position: relative;
@@ -164,10 +186,28 @@
 	line-height: 40px;
 }
 
+
+
+/*************标题移入切换颜色******************/
 #shops li a {
 	margin: 0 25px;
 	color: #333333;
 }
+#shops .nav li:nth-of-type(3):hover a{
+	color: #f15c18;
+}
+#shops .nav li:nth-of-type(4):hover a{
+	color: #f15c18;
+}
+#shops .nav li:nth-of-type(5):hover a{
+	color: #f15c18;
+}
+#shops .nav li:nth-of-type(6):hover a{
+	color: #f15c18;
+}
+
+
+
 
 
 /***********************foot1***************************/
@@ -388,6 +428,9 @@
 	border-bottom: 1px solid gray;
 	padding: 10px;
 	background: white;
+	display: none;
+}
+#shops #food #menu .menu1{
 	display: none;
 }
 

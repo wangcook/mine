@@ -17,7 +17,7 @@
 			<div class="nav">
 
 				<ul class="mine">
-					<span>你好，请登录<a href="#">免费注册</a></span>
+					<span>你好，请登录<a href="html/user.html">免费注册</a></span>
 					<li>|
 						<a href="#">我的订单</a>
 						<div class="menu">
@@ -75,13 +75,36 @@
 					<form class="search">
 						<input type="button" id="bt1" value="宝贝" />
 						<input type="text" id="text1" placeholder="请输入您要搜索商品的关键字">
-						<input type="submit" value="搜索" / style="border:0;width:90px;height:34px;background:#f15c18;color: white;">
+						<input type="submit" value="搜索" / style="border:0;width:90px;height:34px;background:#f15c18;color: white;position: relative;">
 					</form>
-					<span style="background: url(img/gou.png) no-repeat left center;">
-					<a href="#">购物车结算></a></span>
-					<span style="background: url(img/shang.png) no-repeat left center;">
+					<span style="background: url(img/gou.png) no-repeat left center;position: relative;">
+					<a href="#">购物车结算></a>
+					<!--<div class="car">
+						
+						
+						
+						
+					</div>-->
 					
-					<a href="#">我的商城></a></span>
+					
+					
+					
+					
+					
+					
+					</span>
+					<span style="background: url(img/shang.png) no-repeat left center;position: relative;">
+					
+					<a href="#">我的商城></a>
+					<!--<div class="message">
+						
+						
+						
+						
+					</div>-->
+					
+					
+					</span>
 
 					<ul class="nav1">
 						<li>
@@ -104,7 +127,7 @@
 				</div>
 
 				<div id="shops">
-					<ul>
+					<ul class="nav">
 						<li style="width: 176px;background:#f15c18; position: relative;">
 							<a href="#" style="color:white;">
 								所有商品分类
@@ -188,9 +211,15 @@
 								<script>
 									$('#food').delegate('li', 'mouseover', function() {
 										$('#menu').css('display', 'block');
+										var index = $(this).index();
+										$('.menu1').eq(index).css('display', 'block');
+
 									});
 									$('#food').delegate('li', 'mouseout', function() {
 										$('#menu').css('display', 'none');
+										var index = $(this).index();
+										$('.menu1').eq(index).css('display', 'none');
+
 									});
 								</script>
 
@@ -502,7 +531,9 @@
 			</div>
 
 		</div>
+
 		<!----------------- 家居家电--------------------->
+
 		<!----------------会员专享---------------------->
 		<div id="vip">
 			<div class="title">
@@ -724,13 +755,13 @@
 				<li>
 					<a href="#" class="a2"></a>
 					<div class="show">
-						<a href="#">购物车</a>
+						<a href="html/shopping cart.html">购物车</a>
 					</div>
 				</li>
 				<li>
 					<a href="#" class="a3"></a>
 					<div class="show">
-						<a href="#">我的收藏</a>
+						<a href="html/mycollect.html">我的收藏</a>
 					</div>
 				</li>
 				<li>

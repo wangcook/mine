@@ -1,0 +1,95 @@
+/***************************头部*****************/
+#shopping{
+	width: 1210px;
+	height: 100px;
+	margin: 0 auto;
+}
+#shopping img{
+	display: inline-block;
+	margin-top: 20px;
+}
+#shopping .r-con{
+	width: 680px;
+	height: 100px;
+	float: right;
+}
+#shopping .r-con li{
+	float: left;
+	width: 161px;
+	height: 53px;
+	padding-top:47px ;
+	box-sizing: border-box;
+	text-align: center;
+	color:#cccccc;
+	margin-top: 20px;
+}
+#shopping .r-con li:nth-of-type(1){
+	color: black;
+	background: url(../img/shop1.png) no-repeat;
+}
+#shopping .r-con li:nth-of-type(2){
+	
+	background: url(../img/shop2.png) no-repeat;
+}
+#shopping .r-con li:nth-of-type(3){
+	
+	background: url(../img/shop3.png) no-repeat;
+}
+#shopping .r-con li:nth-of-type(4){
+	
+	background: url(../img/shop4.png) no-repeat;
+}
+
+/***************************主体*****************/
+#con{
+	width: 100%;
+	min-height: 343px;
+	border-top: 1px solid #f15c18;
+	border-bottom: 1px solid gray;
+}
+#con dl{
+	 width: 437px;
+	 height: 145px;
+	 margin: 130px auto;
+}
+#con dl img{
+	display: inline-block;
+}
+#con dd{
+	width: 248px;
+	height: 95px;
+	float: right;
+	padding-top: 50px;
+}	
+#con dt{
+	width: 130px;
+	height: 145px;
+	float:left;
+}	
+
+#con dd p{
+	margin-bottom: 15px;
+}
+
+
+#con dd a{
+	margin-right: 10px;
+	padding:5px  8px;
+	color: white;
+}	
+
+
+/***************************浏览记录*****************/				
+
+#look{
+	width: 1200px;
+	height: 340px;
+	margin:0 auto;
+}
+#look li{
+	float: left;
+}
+#look dd{
+	color: red;
+	
+}
